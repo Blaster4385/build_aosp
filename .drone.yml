@@ -17,6 +17,7 @@ steps:
       - "apt -y install curl wget"
       - "apt -y install git"
       - "apt -y install python2-minimal"
+      - "apt -y install python3"
       - "mkdir ~/bin"
       - "PATH=~/bin:$PATH"
       - "curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo"
