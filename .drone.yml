@@ -14,7 +14,8 @@ steps:
       CHANNEL_ID:
         from_secret: CHATID
     commands:
-      - "apt-get install curl"
+      - "apt-get update"
+      - "apt-get -y install curl"
       - "curl https://raw.githubusercontent.com/Blaster4385/scripts/main/build_aosp | bash"
     image: ubuntu:latest
     name: Build
