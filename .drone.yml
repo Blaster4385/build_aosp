@@ -17,7 +17,10 @@ steps:
       - "apt -y install curl wget"
       - "apt -y install git"
       - "apt -y install python2-minimal"
-      - "apt -y install repo"
+      - "mkdir ~/bin"
+      - "PATH=~/bin:$PATH"
+      - "curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo"
+      - "chmod a+x ~/bin/repo"
       - "curl https://raw.githubusercontent.com/Blaster4385/scripts/main/setup.sh | bash"
       - "curl https://raw.githubusercontent.com/Blaster4385/scripts/main/build_aosp | bash"
     image: ubuntu:latest
