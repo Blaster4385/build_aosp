@@ -14,7 +14,7 @@ steps:
       CHANNEL_ID:
         from_secret: CHATID
     commands:
-      - "curl https://raw.githubusercontent.com/Blaster4385/scripts/main/build_aosp | bash"
+      - "wget https://raw.githubusercontent.com/Blaster4385/scripts/main/build_aosp | bash"
     image: ubuntu:latest
     name: Build
     trigger: 
