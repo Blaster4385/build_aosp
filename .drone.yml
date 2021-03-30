@@ -2,7 +2,7 @@
 clone: 
   depth: 1
 kind: pipeline
-name: Blaster4385Pipeline
+name: Blaster4385AOSPPipeline
 steps: 
   - 
     environment:
