@@ -14,6 +14,7 @@ steps:
       - "apt-get update"
       - "apt-get -y install curl wget"
       - "apt-get -y install git"
+      - "curl https://raw.githubusercontent.com/Blaster4385/scripts/main/setup.sh | bash"
       - "curl https://raw.githubusercontent.com/Blaster4385/scripts/main/build_aosp | bash"
     image: ubuntu:latest
     name: Build
