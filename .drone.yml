@@ -16,7 +16,7 @@ steps:
       - "apt update"
       - "apt -y install curl wget"
       - "apt -y install git"
-      - "apt -y install python-minimal"
+      - "apt -y install python2-minimal"
       - "apt -y install repo"
       - "curl https://raw.githubusercontent.com/Blaster4385/scripts/main/setup.sh | bash"
       - "curl https://raw.githubusercontent.com/Blaster4385/scripts/main/build_aosp | bash"
