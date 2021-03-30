@@ -4,9 +4,6 @@ clone:
 kind: pipeline
 name: Blaster4385Pipeline
 steps: 
-  - name: submodules
-    image: alpine/git
-    commands:
   - 
     environment: 
       TG_TOKEN: 
