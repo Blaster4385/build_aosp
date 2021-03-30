@@ -5,12 +5,14 @@ kind: pipeline
 name: Blaster4385Pipeline
 steps: 
   - 
-    environment: 
+    environment:
+      TZ: Asia/Dubai
       TG_TOKEN: 
         from_secret: TOKEN
       CHANNEL_ID:
         from_secret: CHATID
     commands:
+      - "ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone"
       - "apt update"
       - "apt -y install curl wget"
       - "apt -y install git"
