@@ -16,6 +16,7 @@ steps:
       - "apt update"
       - "apt -y install curl wget"
       - "apt -y install git"
+      - "apt install zip unzip"
       - "apt -y install python2-minimal"
       - "apt -y install python3"
       - "ln -s /usr/bin/python2.7 /usr/bin/python"
